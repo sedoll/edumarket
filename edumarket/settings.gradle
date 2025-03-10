@@ -1,0 +1,3 @@
+rootProject.name = 'edumarket'
+include('admin')
+include('user')
