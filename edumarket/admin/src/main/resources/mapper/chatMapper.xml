@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.chunjae.edumarket.per.ChatMapper">
+<mapper namespace="com.admin.mapper.ChatMapper">
     <!-- 채팅방 목록 출력 -->
     <select id="findAllRoom" resultType="com.admin.dto.ChatRoom">
         select * from chatroom
@@ -35,7 +35,7 @@
         insert into chatroom values(#{roomId}, #{name}, #{buyer}, #{seller}, #{pno}, default)
     </insert>
     <!-- 채팅방을 만들기 전에 기존에 중복된 채팅방이 있는지 확인 -->
-    <select id="findChatDist">
+    <select id="findChatDist" resultType="integer">
         select count(*) from chatroom where buyer=#{buyer} and seller=#{seller} and pno=#{pno}
     </select>
     <!-- 채팅 내역 db 저장 -->

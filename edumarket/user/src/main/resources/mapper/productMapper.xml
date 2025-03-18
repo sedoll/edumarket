@@ -28,7 +28,7 @@
     <select id="getProductList" resultType="com.user.dto.Product">
         select * from product where act='JOIN' order by no desc
     </select>
-    <select id="getTotal">
+    <select id="getTotal" resultType="integer">
         select count(*) from product where act='JOIN'
         <if test="type != null">
             <choose>

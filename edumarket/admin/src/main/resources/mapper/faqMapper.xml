@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.chunjae.edumarket.per.FaqMapper">
+<mapper namespace="com.admin.mapper.FaqMapper">
 
     <!--  목록 출력 -->
     <select id="faqList" resultType="com.admin.dto.Faq">

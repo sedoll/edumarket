@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.chunjae.edumarket.per.NoticeMapper">
+<mapper namespace="com.admin.mapper.NoticeMapper">
 <!--    List<Notice> getNoticeList(); // 공지사항 목록-->
 <!--    Notice getNotice(Integer no); // 상세 공지사항-->
 <!--    int insertNotice(Notice notice); // 공지사항 추가-->
