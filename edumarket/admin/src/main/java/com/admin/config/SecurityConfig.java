@@ -36,7 +36,7 @@ public class SecurityConfig {
         http
                 .authorizeRequests()
                 .antMatchers("/").permitAll()
-                .antMatchers("/common/**", "/food/**").permitAll()
+                .antMatchers("/", "/common/**", "/food/**", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-resources/**", "/webjars/**").permitAll()
                 .antMatchers("/notice/noticeList", "/notice/noticeDetail").permitAll()
                 .antMatchers("/faq/**").permitAll()
                 .antMatchers("/free/freeList").permitAll()// "/login", "/join", "/idCheck", "/emailCheck", "/joinPro", "/updateForm", "/updateUserPro"
